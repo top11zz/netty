@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.socket.dao.DataRecordDao">
+  <resultMap id="BaseResultMap" type="com.example.socket.entity.DataRecord">
+    <id column="sto_index" jdbcType="INTEGER" property="stoIndex" />
+    <result column="sto_station_id" jdbcType="INTEGER" property="stoStationId" />
+    <result column="sto_device_id" jdbcType="INTEGER" property="stoDeviceId" />
+    <result column="sto_line_id" jdbcType="INTEGER" property="stoLineId" />
+    <result column="sto_sync_db" jdbcType="INTEGER" property="stoSyncDb" />
+    <result column="sto_sync_time" jdbcType="VARCHAR" property="stoSyncTime" />
+    <result column="10001" jdbcType="REAL" property="m10001" />
+    <result column="10002" jdbcType="REAL" property="m10002" />
+    <result column="10003" jdbcType="REAL" property="m10003" />
+    <result column="10004" jdbcType="REAL" property="m10004" />
+    <result column="10005" jdbcType="REAL" property="m10005" />
+    <result column="10006" jdbcType="REAL" property="m10006" />
+    <result column="10007" jdbcType="REAL" property="m10007" />
+    <result column="10008" jdbcType="REAL" property="m10008" />
+    <result column="10009" jdbcType="REAL" property="m10009" />
+    <result column="10010" jdbcType="REAL" property="m10010" />
+    <result column="10011" jdbcType="REAL" property="m10011" />
+    <result column="10012" jdbcType="REAL" property="m10012" />
+    <result column="10013" jdbcType="REAL" property="m10013" />
+    <result column="10014" jdbcType="REAL" property="m10014" />
+    <result column="10015" jdbcType="REAL" property="m10015" />
+    <result column="10016" jdbcType="REAL" property="m10016" />
+    <result column="10017" jdbcType="REAL" property="m10017" />
+    <result column="10018" jdbcType="REAL" property="m10018" />
+    <result column="10019" jdbcType="REAL" property="m10019" />
+    <result column="10020" jdbcType="REAL" property="m10020" />
+    <result column="10021" jdbcType="REAL" property="m10021" />
+    <result column="10022" jdbcType="REAL" property="m10022" />
+    <result column="10023" jdbcType="REAL" property="m10023" />
+    <result column="10024" jdbcType="REAL" property="m10024" />
+    <result column="10025" jdbcType="REAL" property="m10025" />
+    <result column="10026" jdbcType="REAL" property="m10026" />
+    <result column="10027" jdbcType="REAL" property="m10027" />
+    <result column="10028" jdbcType="REAL" property="m10028" />
+    <result column="10029" jdbcType="REAL" property="m10029" />
+    <result column="10030" jdbcType="REAL" property="m10030" />
+    <result column="10031" jdbcType="REAL" property="m10031" />
+    <result column="10032" jdbcType="REAL" property="m10032" />
+    <result column="10033" jdbcType="REAL" property="m10033" />
+    <result column="10034" jdbcType="REAL" property="m10034" />
+    <result column="10035" jdbcType="REAL" property="m10035" />
+    <result column="10036" jdbcType="REAL" property="m10036" />
+    <result column="10037" jdbcType="REAL" property="m10037" />
+    <result column="10038" jdbcType="REAL" property="m10038" />
+    <result column="10039" jdbcType="REAL" property="m10039" />
+    <result column="10040" jdbcType="REAL" property="m10040" />
+    <result column="10041" jdbcType="REAL" property="m10041" />
+    <result column="10042" jdbcType="REAL" property="m10042" />
+    <result column="10043" jdbcType="REAL" property="m10043" />
+    <result column="10044" jdbcType="REAL" property="m10044" />
+    <result column="10045" jdbcType="REAL" property="m10045" />
+    <result column="10046" jdbcType="REAL" property="m10046" />
+    <result column="10047" jdbcType="REAL" property="m10047" />
+    <result column="10048" jdbcType="REAL" property="m10048" />
+    <result column="10049" jdbcType="REAL" property="m10049" />
+    <result column="10050" jdbcType="REAL" property="m10050" />
+    <result column="10051" jdbcType="REAL" property="m10051" />
+    <result column="10052" jdbcType="REAL" property="m10052" />
+    <result column="10053" jdbcType="REAL" property="m10053" />
+    <result column="10054" jdbcType="REAL" property="m10054" />
+    <result column="10055" jdbcType="REAL" property="m10055" />
+    <result column="10056" jdbcType="REAL" property="m10056" />
+    <result column="10057" jdbcType="REAL" property="m10057" />
+    <result column="10058" jdbcType="REAL" property="m10058" />
+    <result column="10059" jdbcType="REAL" property="m10059" />
+    <result column="10060" jdbcType="REAL" property="m10060" />
+    <result column="10061" jdbcType="REAL" property="m10061" />
+    <result column="10062" jdbcType="REAL" property="m10062" />
+    <result column="10063" jdbcType="REAL" property="m10063" />
+    <result column="10064" jdbcType="REAL" property="m10064" />
+    <result column="10065" jdbcType="REAL" property="m10065" />
+    <result column="10066" jdbcType="REAL" property="m10066" />
+    <result column="10067" jdbcType="REAL" property="m10067" />
+    <result column="10068" jdbcType="REAL" property="m10068" />
+    <result column="10069" jdbcType="REAL" property="m10069" />
+    <result column="10070" jdbcType="REAL" property="m10070" />
+    <result column="10071" jdbcType="REAL" property="m10071" />
+    <result column="10072" jdbcType="REAL" property="m10072" />
+    <result column="10073" jdbcType="REAL" property="m10073" />
+    <result column="10074" jdbcType="REAL" property="m10074" />
+    <result column="10075" jdbcType="REAL" property="m10075" />
+    <result column="10080" jdbcType="REAL" property="m10080" />
+    <result column="10076" jdbcType="REAL" property="m10076" />
+    <result column="10077" jdbcType="REAL" property="m10077" />
+    <result column="10078" jdbcType="REAL" property="m10078" />
+    <result column="10079" jdbcType="REAL" property="m10079" />
+    <result column="10100" jdbcType="REAL" property="m10100" />
+    <result column="10081" jdbcType="REAL" property="m10081" />
+    <result column="10082" jdbcType="REAL" property="m10082" />
+    <result column="10083" jdbcType="REAL" property="m10083" />
+    <result column="10084" jdbcType="REAL" property="m10084" />
+    <result column="10085" jdbcType="REAL" property="m10085" />
+    <result column="10086" jdbcType="REAL" property="m10086" />
+    <result column="10087" jdbcType="REAL" property="m10087" />
+    <result column="10088" jdbcType="REAL" property="m10088" />
+    <result column="10089" jdbcType="REAL" property="m10089" />
+    <result column="10090" jdbcType="REAL" property="m10090" />
+    <result column="10091" jdbcType="REAL" property="m10091" />
+    <result column="10092" jdbcType="REAL" property="m10092" />
+    <result column="10093" jdbcType="REAL" property="m10093" />
+    <result column="10094" jdbcType="REAL" property="m10094" />
+    <result column="10095" jdbcType="REAL" property="m10095" />
+    <result column="10096" jdbcType="REAL" property="m10096" />
+    <result column="10097" jdbcType="REAL" property="m10097" />
+    <result column="10098" jdbcType="REAL" property="m10098" />
+    <result column="10099" jdbcType="REAL" property="m10099" />
+    <result column="10101" jdbcType="REAL" property="m10101" />
+    <result column="10102" jdbcType="REAL" property="m10102" />
+    <result column="10103" jdbcType="REAL" property="m10103" />
+    <result column="10104" jdbcType="REAL" property="m10104" />
+    <result column="10105" jdbcType="REAL" property="m10105" />
+    <result column="10106" jdbcType="REAL" property="m10106" />
+    <result column="10107" jdbcType="REAL" property="m10107" />
+    <result column="10108" jdbcType="REAL" property="m10108" />
+    <result column="10109" jdbcType="REAL" property="m10109" />
+    <result column="10110" jdbcType="REAL" property="m10110" />
+    <result column="10111" jdbcType="REAL" property="m10111" />
+    <result column="10112" jdbcType="REAL" property="m10112" />
+    <result column="10113" jdbcType="REAL" property="m10113" />
+    <result column="10114" jdbcType="REAL" property="m10114" />
+    <result column="10115" jdbcType="REAL" property="m10115" />
+    <result column="10116" jdbcType="REAL" property="m10116" />
+    <result column="10117" jdbcType="REAL" property="m10117" />
+    <result column="10118" jdbcType="REAL" property="m10118" />
+    <result column="10119" jdbcType="REAL" property="m10119" />
+    <result column="10120" jdbcType="REAL" property="m10120" />
+    <result column="10121" jdbcType="REAL" property="m10121" />
+    <result column="10122" jdbcType="REAL" property="m10122" />
+    <result column="10123" jdbcType="REAL" property="m10123" />
+    <result column="10124" jdbcType="REAL" property="m10124" />
+    <result column="10125" jdbcType="REAL" property="m10125" />
+    <result column="10126" jdbcType="REAL" property="m10126" />
+    <result column="10127" jdbcType="REAL" property="m10127" />
+    <result column="10128" jdbcType="REAL" property="m10128" />
+    <result column="10129" jdbcType="REAL" property="m10129" />
+    <result column="10130" jdbcType="REAL" property="m10130" />
+    <result column="10131" jdbcType="REAL" property="m10131" />
+    <result column="10132" jdbcType="REAL" property="m10132" />
+    <result column="10133" jdbcType="REAL" property="m10133" />
+    <result column="10134" jdbcType="REAL" property="m10134" />
+    <result column="10135" jdbcType="REAL" property="m10135" />
+    <result column="10136" jdbcType="REAL" property="m10136" />
+    <result column="10137" jdbcType="REAL" property="m10137" />
+    <result column="10138" jdbcType="REAL" property="m10138" />
+    <result column="10139" jdbcType="REAL" property="m10139" />
+    <result column="10140" jdbcType="REAL" property="m10140" />
+    <result column="10141" jdbcType="REAL" property="m10141" />
+    <result column="10142" jdbcType="REAL" property="m10142" />
+    <result column="10143" jdbcType="REAL" property="m10143" />
+    <result column="10144" jdbcType="REAL" property="m10144" />
+    <result column="10145" jdbcType="REAL" property="m10145" />
+    <result column="10146" jdbcType="REAL" property="m10146" />
+    <result column="10147" jdbcType="REAL" property="m10147" />
+    <result column="10148" jdbcType="REAL" property="m10148" />
+    <result column="10149" jdbcType="REAL" property="m10149" />
+    <result column="10150" jdbcType="REAL" property="m10150" />
+    <result column="10151" jdbcType="REAL" property="m10151" />
+    <result column="10152" jdbcType="REAL" property="m10152" />
+    <result column="10153" jdbcType="REAL" property="m10153" />
+    <result column="10154" jdbcType="REAL" property="m10154" />
+    <result column="10155" jdbcType="REAL" property="m10155" />
+    <result column="10156" jdbcType="REAL" property="m10156" />
+    <result column="10157" jdbcType="REAL" property="m10157" />
+    <result column="10158" jdbcType="REAL" property="m10158" />
+    <result column="10159" jdbcType="REAL" property="m10159" />
+    <result column="10160" jdbcType="REAL" property="m10160" />
+    <result column="10161" jdbcType="REAL" property="m10161" />
+    <result column="10162" jdbcType="REAL" property="m10162" />
+    <result column="10163" jdbcType="REAL" property="m10163" />
+    <result column="10164" jdbcType="REAL" property="m10164" />
+    <result column="10165" jdbcType="REAL" property="m10165" />
+    <result column="10166" jdbcType="REAL" property="m10166" />
+    <result column="10167" jdbcType="REAL" property="m10167" />
+    <result column="10168" jdbcType="REAL" property="m10168" />
+    <result column="10169" jdbcType="REAL" property="m10169" />
+    <result column="10170" jdbcType="REAL" property="m10170" />
+    <result column="10171" jdbcType="REAL" property="m10171" />
+    <result column="10172" jdbcType="REAL" property="m10172" />
+    <result column="10173" jdbcType="REAL" property="m10173" />
+    <result column="10174" jdbcType="REAL" property="m10174" />
+    <result column="11000" jdbcType="REAL" property="m11000" />
+    <result column="11001" jdbcType="REAL" property="m11001" />
+    <result column="11002" jdbcType="REAL" property="m11002" />
+    <result column="11003" jdbcType="REAL" property="m11003" />
+    <result column="11004" jdbcType="REAL" property="m11004" />
+    <result column="11005" jdbcType="REAL" property="m11005" />
+    <result column="11006" jdbcType="REAL" property="m11006" />
+    <result column="11007" jdbcType="REAL" property="m11007" />
+    <result column="11008" jdbcType="REAL" property="m11008" />
+    <result column="11009" jdbcType="REAL" property="m11009" />
+    <result column="11010" jdbcType="REAL" property="m11010" />
+    <result column="11011" jdbcType="REAL" property="m11011" />
+    <result column="11012" jdbcType="REAL" property="m11012" />
+    <result column="11013" jdbcType="REAL" property="m11013" />
+    <result column="11014" jdbcType="REAL" property="m11014" />
+    <result column="11015" jdbcType="REAL" property="m11015" />
+    <result column="11016" jdbcType="REAL" property="m11016" />
+    <result column="11017" jdbcType="REAL" property="m11017" />
+    <result column="11018" jdbcType="REAL" property="m11018" />
+    <result column="11019" jdbcType="REAL" property="m11019" />
+    <result column="11020" jdbcType="REAL" property="m11020" />
+    <result column="11021" jdbcType="REAL" property="m11021" />
+    <result column="11022" jdbcType="REAL" property="m11022" />
+    <result column="11023" jdbcType="REAL" property="m11023" />
+    <result column="11024" jdbcType="REAL" property="m11024" />
+    <result column="11025" jdbcType="REAL" property="m11025" />
+    <result column="11026" jdbcType="REAL" property="m11026" />
+    <result column="11027" jdbcType="REAL" property="m11027" />
+    <result column="11028" jdbcType="REAL" property="m11028" />
+    <result column="11029" jdbcType="REAL" property="m11029" />
+    <result column="11030" jdbcType="REAL" property="m11030" />
+    <result column="11031" jdbcType="REAL" property="m11031" />
+    <result column="11032" jdbcType="REAL" property="m11032" />
+    <result column="11033" jdbcType="REAL" property="m11033" />
+    <result column="11034" jdbcType="REAL" property="m11034" />
+    <result column="11035" jdbcType="REAL" property="m11035" />
+    <result column="11036" jdbcType="REAL" property="m11036" />
+    <result column="11037" jdbcType="REAL" property="m11037" />
+    <result column="11038" jdbcType="REAL" property="m11038" />
+    <result column="11039" jdbcType="REAL" property="m11039" />
+    <result column="11040" jdbcType="REAL" property="m11040" />
+    <result column="11041" jdbcType="REAL" property="m11041" />
+    <result column="11042" jdbcType="REAL" property="m11042" />
+    <result column="11043" jdbcType="REAL" property="m11043" />
+    <result column="11044" jdbcType="REAL" property="m11044" />
+    <result column="11045" jdbcType="REAL" property="m11045" />
+    <result column="11046" jdbcType="REAL" property="m11046" />
+    <result column="11047" jdbcType="REAL" property="m11047" />
+    <result column="11048" jdbcType="REAL" property="m11048" />
+    <result column="11049" jdbcType="REAL" property="m11049" />
+    <result column="11050" jdbcType="REAL" property="m11050" />
+    <result column="11051" jdbcType="REAL" property="m11051" />
+    <result column="11052" jdbcType="REAL" property="m11052" />
+    <result column="11053" jdbcType="REAL" property="m11053" />
+    <result column="11054" jdbcType="REAL" property="m11054" />
+    <result column="11055" jdbcType="REAL" property="m11055" />
+    <result column="11056" jdbcType="REAL" property="m11056" />
+    <result column="11057" jdbcType="REAL" property="m11057" />
+    <result column="11058" jdbcType="REAL" property="m11058" />
+    <result column="11059" jdbcType="REAL" property="m11059" />
+    <result column="11060" jdbcType="REAL" property="m11060" />
+    <result column="11061" jdbcType="REAL" property="m11061" />
+    <result column="11062" jdbcType="REAL" property="m11062" />
+    <result column="11063" jdbcType="REAL" property="m11063" />
+    <result column="11064" jdbcType="REAL" property="m11064" />
+    <result column="11065" jdbcType="REAL" property="m11065" />
+    <result column="11066" jdbcType="REAL" property="m11066" />
+    <result column="11067" jdbcType="REAL" property="m11067" />
+    <result column="11068" jdbcType="REAL" property="m11068" />
+    <result column="11069" jdbcType="REAL" property="m11069" />
+    <result column="11070" jdbcType="REAL" property="m11070" />
+    <result column="11071" jdbcType="REAL" property="m11071" />
+    <result column="11072" jdbcType="REAL" property="m11072" />
+    <result column="11073" jdbcType="REAL" property="m11073" />
+    <result column="11074" jdbcType="REAL" property="m11074" />
+    <result column="11075" jdbcType="REAL" property="m11075" />
+    <result column="11076" jdbcType="REAL" property="m11076" />
+    <result column="11077" jdbcType="REAL" property="m11077" />
+    <result column="11201" jdbcType="REAL" property="m11201" />
+    <result column="11202" jdbcType="REAL" property="m11202" />
+    <result column="11203" jdbcType="REAL" property="m11203" />
+    <result column="11204" jdbcType="REAL" property="m11204" />
+    <result column="11205" jdbcType="REAL" property="m11205" />
+    <result column="11206" jdbcType="REAL" property="m11206" />
+    <result column="11207" jdbcType="REAL" property="m11207" />
+    <result column="11208" jdbcType="REAL" property="m11208" />
+    <result column="11209" jdbcType="REAL" property="m11209" />
+    <result column="11210" jdbcType="REAL" property="m11210" />
+    <result column="11211" jdbcType="REAL" property="m11211" />
+    <result column="11212" jdbcType="REAL" property="m11212" />
+    <result column="11213" jdbcType="REAL" property="m11213" />
+    <result column="11214" jdbcType="REAL" property="m11214" />
+    <result column="11215" jdbcType="REAL" property="m11215" />
+    <result column="11216" jdbcType="REAL" property="m11216" />
+    <result column="11217" jdbcType="REAL" property="m11217" />
+    <result column="11218" jdbcType="REAL" property="m11218" />
+    <result column="11219" jdbcType="REAL" property="m11219" />
+    <result column="11220" jdbcType="REAL" property="m11220" />
+    <result column="11221" jdbcType="REAL" property="m11221" />
+    <result column="11222" jdbcType="REAL" property="m11222" />
+    <result column="11223" jdbcType="REAL" property="m11223" />
+    <result column="11224" jdbcType="REAL" property="m11224" />
+    <result column="11225" jdbcType="REAL" property="m11225" />
+    <result column="11226" jdbcType="REAL" property="m11226" />
+    <result column="11227" jdbcType="REAL" property="m11227" />
+    <result column="11228" jdbcType="REAL" property="m11228" />
+    <result column="11229" jdbcType="REAL" property="m11229" />
+    <result column="11230" jdbcType="REAL" property="m11230" />
+    <result column="11231" jdbcType="REAL" property="m11231" />
+    <result column="11232" jdbcType="REAL" property="m11232" />
+    <result column="11233" jdbcType="REAL" property="m11233" />
+    <result column="11234" jdbcType="REAL" property="m11234" />
+    <result column="11235" jdbcType="REAL" property="m11235" />
+    <result column="11236" jdbcType="REAL" property="m11236" />
+    <result column="11243" jdbcType="REAL" property="m11243" />
+    <result column="11244" jdbcType="REAL" property="m11244" />
+    <result column="11245" jdbcType="REAL" property="m11245" />
+    <result column="11246" jdbcType="REAL" property="m11246" />
+    <result column="13018" jdbcType="REAL" property="m13018" />
+    <result column="20001" jdbcType="REAL" property="m20001" />
+    <result column="20002" jdbcType="REAL" property="m20002" />
+    <result column="30001" jdbcType="REAL" property="m30001" />
+    <result column="30002" jdbcType="REAL" property="m30002" />
+    <result column="30003" jdbcType="REAL" property="m30003" />
+    <result column="30004" jdbcType="REAL" property="m30004" />
+    <result column="50001" jdbcType="REAL" property="m50001" />
+    <result column="50004" jdbcType="REAL" property="m50004" />
+    <result column="11357" jdbcType="REAL" property="m11357" />
+    <result column="11358" jdbcType="REAL" property="m11358" />
+    <result column="11275" jdbcType="REAL" property="m11275" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    sto_index, sto_station_id, sto_device_id, sto_line_id, sto_sync_db, sto_sync_time, 
+    10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010, 10011, 10012, 
+    10013, 10014, 10015, 10016, 10017, 10018, 10019, 10020, 10021, 10022, 10023, 10024, 
+    10025, 10026, 10027, 10028, 10029, 10030, 10031, 10032, 10033, 10034, 10035, 10036, 
+    10037, 10038, 10039, 10040, 10041, 10042, 10043, 10044, 10045, 10046, 10047, 10048, 
+    10049, 10050, 10051, 10052, 10053, 10054, 10055, 10056, 10057, 10058, 10059, 10060, 
+    10061, 10062, 10063, 10064, 10065, 10066, 10067, 10068, 10069, 10070, 10071, 10072, 
+    10073, 10074, 10075, 10080, 10076, 10077, 10078, 10079, 10100, 10081, 10082, 10083, 
+    10084, 10085, 10086, 10087, 10088, 10089, 10090, 10091, 10092, 10093, 10094, 10095, 
+    10096, 10097, 10098, 10099, 10101, 10102, 10103, 10104, 10105, 10106, 10107, 10108, 
+    10109, 10110, 10111, 10112, 10113, 10114, 10115, 10116, 10117, 10118, 10119, 10120, 
+    10121, 10122, 10123, 10124, 10125, 10126, 10127, 10128, 10129, 10130, 10131, 10132, 
+    10133, 10134, 10135, 10136, 10137, 10138, 10139, 10140, 10141, 10142, 10143, 10144, 
+    10145, 10146, 10147, 10148, 10149, 10150, 10151, 10152, 10153, 10154, 10155, 10156, 
+    10157, 10158, 10159, 10160, 10161, 10162, 10163, 10164, 10165, 10166, 10167, 10168, 
+    10169, 10170, 10171, 10172, 10173, 10174, 11000, 11001, 11002, 11003, 11004, 11005, 
+    11006, 11007, 11008, 11009, 11010, 11011, 11012, 11013, 11014, 11015, 11016, 11017, 
+    11018, 11019, 11020, 11021, 11022, 11023, 11024, 11025, 11026, 11027, 11028, 11029, 
+    11030, 11031, 11032, 11033, 11034, 11035, 11036, 11037, 11038, 11039, 11040, 11041, 
+    11042, 11043, 11044, 11045, 11046, 11047, 11048, 11049, 11050, 11051, 11052, 11053, 
+    11054, 11055, 11056, 11057, 11058, 11059, 11060, 11061, 11062, 11063, 11064, 11065, 
+    11066, 11067, 11068, 11069, 11070, 11071, 11072, 11073, 11074, 11075, 11076, 11077, 
+    11201, 11202, 11203, 11204, 11205, 11206, 11207, 11208, 11209, 11210, 11211, 11212, 
+    11213, 11214, 11215, 11216, 11217, 11218, 11219, 11220, 11221, 11222, 11223, 11224, 
+    11225, 11226, 11227, 11228, 11229, 11230, 11231, 11232, 11233, 11234, 11235, 11236, 
+    11243, 11244, 11245, 11246, 13018, 20001, 20002, 30001, 30002, 30003, 30004, 50001, 
+    50004, 11357, 11358, 11275
+  </sql>
+  <select id="selectByPrimaryKey" resultType="com.example.socket.entity.DataRecord">
+    select
+    <include refid="Base_Column_List" />
+    from sto_data_record
+    where sto_index = #{stoIndex,jdbcType=INTEGER}
+  </select>
+
+  <insert id="addData">
+    insert into sto_data_record(`sto_index`,`sto_station_id`,`sto_device_id`,`sto_line_id`,`sto_sync_time`,`10001`,`10002`,`10003`,`10004`,`10005`,`10006`,`10007`,`10008`,`10009`,`10017`,`10019`,`10013`,`10014`,`10015`,`10057`,`10058`,`10059`,`10060`,`10018`,`10010`,`10011`,`10012`,`10031`,`10032`) values (default,#{stoStationId},1,#{stoLineId},#{stoSyncTime},#{m10001},#{m10002},#{m10003},#{m10004},#{m10005},#{m10006},#{m10007},#{m10008},#{m10009},#{m10017},#{m10019},#{m10013},#{m10014},#{m10015},#{m10057},#{m10058},#{m10059},#{m10060},#{m10018},#{m10010},#{m10011},#{m10012},#{m10031},#{m10032}
+    );
+  </insert>
+
+  <select id="checkTime" resultMap="BaseResultMap" >
+    select * from sto_data_record where sto_station_id = #{stationId} and sto_line_id = #{lineId} and sto_sync_time >= #{time}
+  </select>
+
+
+</mapper>
